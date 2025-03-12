@@ -1,7 +1,7 @@
 function List({ items }:{items:string[]}) {
   return (
     <>
-      <ul>{items.map((item) => <li>{item}</li>)}</ul>
+      <ul>{items.map((item,idx) => <li key={idx}>{item}</li>)}</ul>
     </>
   );
 }
