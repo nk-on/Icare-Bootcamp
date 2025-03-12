@@ -1,5 +1,5 @@
 import Hello from "./Hello";
-function Header({name}) {
+function Header({name}:{name:string}) {
   return (
     <>
     <Hello />
