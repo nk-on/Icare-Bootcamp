@@ -1,11 +1,12 @@
 import './App.css'
-import Hello from './Hello'
+import Header from './Header';
+import List from './List';
 function App() {
-
+  const fruits = ["Apple","Strawberry","Cherry"];
   return (
     <>
-     <Hello />
-     <p>This is the main App component.</p>
+     <Header name={"App component"} />
+     <List items={fruits} />
     </>
   )
 }
