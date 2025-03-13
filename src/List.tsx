@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 function List({ items }: { items: string[] }) {
-  const [clickedIdx, setClickedIdx] = useState(-1);
+  const [hoveredIdx, setHoveredIdx] = useState(-1);
   return (
     <>
       <ul>
         {items.map((item, idx) => (
           <li
             key={idx}
-            onClick={() => setClickedIdx(idx)}
-            style={{ background: `${clickedIdx === idx ? "red" : ""}` }}
+            onClick={() => setHoveredIdx(idx)}
+            style={{ background: `${hoveredIdx === idx ? "red" : ""}` }}
           >
             {item}
           </li>
